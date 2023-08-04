@@ -3,9 +3,9 @@ import videoHero from '../../images/portfolio-hero.mp4'
 
 function Welcome() {
     return (
-        <div>
-            <div className='h-[90vh]'>
-                <video autoPlay muted loop playsInline>
+        <div className='max-w-screen overflow-x-hidden'>
+            <div className='video-hero'>
+                <video autoPlay muted loop playsInline className='video h-full min-w-screen object-cover'>
                     <source src={videoHero} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

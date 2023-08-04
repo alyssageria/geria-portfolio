@@ -12,3 +12,13 @@
   height: 3rem;
   width: 12rem;
 }
+
+/* welcome styles */
+.video-hero {
+  height: 80vh;
+  width: 100vw;
+}
+
+.video {
+  width: 100vw;
+}
