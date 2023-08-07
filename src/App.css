@@ -4,7 +4,8 @@
 
 * {
   margin: 0;
-  font-family: 'Tektur';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
 
 /* navbar styles */
@@ -15,7 +16,7 @@
 
 /* welcome styles */
 .video-hero {
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
 }
 
