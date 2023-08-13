@@ -5,13 +5,12 @@ import imageMe from '../../images/me-transparent.png';
 function Welcome() {
     return (
         <div className='max-w-screen overflow-x-hidden'>
-            <div className='video-hero'>
+            <div className='video-hero relative'>
                 <video autoPlay muted loop playsInline className='video h-full min-w-screen object-cover'>
                     <source src={videoHero} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="absolute inset-0 flex justify-center items-center">
-
                     <h1 className="text-white text-7xl text-center">Alyssa Geria <br></br> <span className='text-5xl'>Full Stack Web Developer</span></h1>
                 </div>
             </div>

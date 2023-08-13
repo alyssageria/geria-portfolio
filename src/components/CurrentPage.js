@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Welcome from './pages/Welcome';
+import Projects from './pages/Projects';
 
 function CurrentPage() {
     const [currentPage, setCurrentPage] = useState('Welcome');
@@ -8,6 +9,9 @@ function CurrentPage() {
     const renderPage = () => {
         if (currentPage === 'Welcome') {
             return <Welcome />;
+        }
+        if (currentPage === 'Projects') {
+            return <Projects />;
         }
     };
 

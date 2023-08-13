@@ -23,3 +23,11 @@
 .video {
   width: 100vw;
 }
+
+/* projects styles */
+.projects {
+  background-image: url('./images/black-green.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
