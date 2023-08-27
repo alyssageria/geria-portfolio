@@ -1,7 +1,7 @@
 import React from 'react';
-import sportsConnect from '../../images/sports-connect.png';
-import homehub from '../../images/homehub.png';
-import goForFitness from '../../images/go-for-fitness-screenshot.png';
+import sportsConnect from '../../images/sportsConnect.png';
+import homehub from '../../images/homeHub-comp.png';
+import goForFitness from '../../images/goForFitness.png';
 
 function Projects() {
     const projects = [
