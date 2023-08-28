@@ -10,18 +10,24 @@ function Projects() {
             title: 'Sports Connect',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lacinia eros, id accumsan leo. Suspendisse dui leo, mattis eu pulvinar a, sollicitudin ac quam.',
             image: sportsConnect,
+            deployed: 'https://sports-connect-e11a3bbe276b.herokuapp.com/',
+            repository: 'https://github.com/JaminHLO/jaan-event-manager',
         },
         {
             id: 2,
             title: 'HomeHub',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lacinia eros, id accumsan leo. Suspendisse dui leo, mattis eu pulvinar a, sollicitudin ac quam.',
             image: homehub,
+            deployed: 'https://home-hub-management.herokuapp.com/',
+            repository: 'https://github.com/Anabel-Espinoza/HomeHub',
         },
         {
             id: 3,
             title: 'Go For Fitness',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lacinia eros, id accumsan leo. Suspendisse dui leo, mattis eu pulvinar a, sollicitudin ac quam.',
             image: goForFitness,
+            deployed: 'https://jacobryanwillis.github.io/Your_Digital_Personal_Trainer/',
+            repository: 'https://github.com/JacobRyanWillis/Your_Digital_Personal_Trainer',
         }
     ]
 
@@ -35,16 +41,16 @@ function Projects() {
                     const flexStartEnd = isEven ? 'justify-start' : 'justify-end';
 
                     return (
-                        <div key={project.id} className={`my-5 border-solid border-2 border-black h-52 w-[70vw] flex ${flexDirClass}`} id={`project-${project.id}`}>
+                        <div key={project.id} className={`my-5 border-solid border-2 border-black bg-black transition ease-in-out delay-150 bg-black opacity-90 hover:opacity-100 h-60 w-[70vw] flex ${flexDirClass}`} id={`project-${project.id}`}>
                             <div className={`w-{30%} flex ${flexStartEnd}`}>
-                                <img src={project.image} className='h-52'></img>
+                                <img src={project.image} className='h-60'></img>
                             </div>
                             <div className='text-white w-[70%] text-center flex flex-col justify-center'>
-                                <h2 className="text-center text-white text-3xl py-2">{project.title}</h2>
-                                <p>{project.description}</p>
-                                <div>
-                                    <button className='p-1 bg-black border-solid border-2 border-white rounded w-1/4'>Deployed</button>
-                                    <button className='p-1 bg-white text-black rounded w-1/4'>Repository</button>
+                                <h2 className="text-center text-white text-3xl p-3">{project.title}</h2>
+                                <p className='p-3'>{project.description}</p>
+                                <div className='p-3'>
+                                    <button className='p-1 m-3 transition ease-in-out delay-150 bg-white text-black hover:-translate-y-1 hover:scale-110 hover:bg-emerald-800 duration-300 rounded w-[20%]'><a href={project.deployed}>Deployed</a></button>
+                                    <button className='p-1 m-3 transition ease-in-out delay-150 bg-black text-white border-solid border-2 border-white hover:-translate-y-1 hover:scale-110 hover:bg-emerald-800 duration-300 rounded w-[20%]'><a href={project.repository}>Repository</a></button>
                                 </div>
                             </div>
                         </div>
