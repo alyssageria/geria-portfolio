@@ -14,7 +14,7 @@ function Welcome() {
                     <h1 className="text-white text-7xl text-center">Alyssa Geria <br></br> <span className='text-5xl'>Full Stack Web Developer</span></h1>
                 </div>
             </div>
-            <div className='bg-black h-[80vh] text-white'>
+            {/* <div className='bg-black h-[80vh] text-white'>
                 <h2 className='text-8xl p-6 text-center'>About</h2>
                 <div className='flex items-center'>
                     <div className='grid-cols-1 w-2/5 text-center'>
@@ -27,11 +27,11 @@ function Welcome() {
                     <div className='grid-cols-3 w-2/5 text-center'>
                         <h1 className='text-4xl'>What I do</h1>
                     </div>
-                    {/* <div className='grid-cols-2 w-1/2 flex justify-center'>
+                    <div className='grid-cols-2 w-1/2 flex justify-center'>
                         <p className='text-3xl'>Hi! My name is Alyssa, and I am a Full Stack Web Developer from Mission Viejo, California. I have grown a strong passion for web development and I love to create beautful user-centric webpages.</p>
-                    </div> */}
+                    </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
